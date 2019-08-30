@@ -17,13 +17,21 @@
 			</tbody>
 		</table>
 		<span>Please pay the Exact Amount to the specified Address within : 60 Min</span>
+		<br>
 		<span>Waiting for Payment ...</span>
+		<br>
+		<button  @click="confirmPayment()" class="btn btn-primary">I have paid</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Payment'
+	name: 'Payment',
+	methods:{
+		confirmPayment(){
+			this.$router.push('/details/1')
+		}
+	}
   
 }
 </script>

@@ -24,7 +24,7 @@
                     <option>PayPal</option>
                 </select>
             </div>
-			<button type="submit" class="btn btn-primary">Validate Username And Proceed to Payment</button>
+			<button  @click="submitAcctTx()" class="btn btn-primary">Validate Username And Proceed to Payment</button>
 		</form>
     </div>
   </div>
@@ -32,8 +32,12 @@
 
 <script>
 export default {
-  name: 'Home'
-  
+	name: 'Home',
+	methods:{
+		submitAcctTx(){
+			this.$router.push('/tx/123')
+		}
+	}
 }
 </script>
 

@@ -1,25 +1,12 @@
 <template>
   <div id="app">
-    <Home/>
-    <Payment/>
-    <AccountDetails/>
+    <div id="nav">
+      <!-- <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> -->
+    </div>
+    <router-view/>
   </div>
 </template>
-
-<script>
-import Home from './components/Home.vue'
-import AccountDetails from './components/AccountDetails.vue'
-import Payment from './components/Payment.vue'
-
-export default {
-  name: 'app',
-  components: {
-    Home,
-    Payment,
-    AccountDetails
-  }
-}
-</script>
 
 <style>
 #app {

@@ -31,12 +31,18 @@
 				</tr>
 			</tbody>
 		</table>
+		<button @click="createAccount()" class="btn btn-primary">create Account</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AccountDetails'
+  name: 'AccountDetails',
+  methods:{
+	createAccount(){
+		this.$router.push('/')
+	}
+  }
   
 }
 </script>
